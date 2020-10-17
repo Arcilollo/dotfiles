@@ -1,0 +1,25 @@
+#!/bin/sh
+
+# Add verbosity
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -vI" \
+	mkdir="mkdir -pv"
+
+# Colorize output
+alias \
+	ls="ls -hH --color=auto --group-directories-first" \
+	grep="grep --color=auto" \
+	diff="diff --color=auto"
+
+# Abbreviate commands
+alias \
+	v="nvim" \
+	free="free -mt" \
+	yt="youtube-dl -i" \
+	yta="youtube-dl -x -f bestaudio/best" \
+	anaconda="source /opt/anaconda/bin/activate root" \
+	etop="watch -t etop" \
+	p="sudo pacman" \
+	g="git"

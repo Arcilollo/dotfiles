@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# dirs shortcuts
+alias \
+	d="cd ~/Scrivania && ls" \
+	D="cd ~/Scaricati && ls" \
+	V="cd ~/Video && ls" \
+	h="cd ~/ && ls" \
+	sc="cd ~/.local/bin && ls" \
+	P="cd ~/Programmazione/Programmazione-git && ls" \
+	Pcpp="cd ~/Programmazione/Programmazione-git/C++ && ls" \
+	Pc="cd ~/Programmazione/Programmazione-git/C && ls" \
+	Pj="cd ~/Programmazione/Programmazione-git/Java && ls" \
+	Pp="cd ~/Programmazione/Programmazione-git/Python && ls"
+
+# files shortcuts
+alias \
+	zrc="nvim ~/.zshrc" \
+	arc="nvim ~/.config/aliasrc" \
+	src="nvim ~/.config/shortcutrc" \
+	vrc="nvim ~/.config/nvim/init.vim"
