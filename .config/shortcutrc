@@ -11,7 +11,7 @@ alias \
 	Pcpp="cd ~/Programmazione/Programmazione-git/C++ && ls" \
 	Pc="cd ~/Programmazione/Programmazione-git/C && ls" \
 	Pj="cd ~/Programmazione/Programmazione-git/Java && ls" \
-	Pp="cd ~/Programmazione/Programmazione-git/Python && ls"
+	Pp="cd ~/Programmazione/Programmazione-git/Python && ls" \
 
 # files shortcuts
 alias \

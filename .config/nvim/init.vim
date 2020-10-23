@@ -20,6 +20,7 @@ call plug#begin(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/plugged"
 	Plug 'kovetskiy/sxhkd-vim'
 	Plug 'ap/vim-css-color'
 	Plug 'terryma/vim-multiple-cursors'
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	Plug 'Raimondi/delimitMate'
 call plug#end()
 
@@ -65,30 +66,6 @@ set clipboard+=unnamedplus
 	imap <leader>i <esc>:call ToggleIPA()<CR>a
 	nm <leader>q :call ToggleProse()<CR>
 
-" auto parenthesis
-	inoremap {      {}<Left>
-	inoremap {<CR>  {<CR>}<Esc>O
-	inoremap {{     {
-	inoremap {}     {}
-
-	inoremap [      []<Left>
-	inoremap [<CR>  [<CR>]<Esc>O
-	inoremap [[     [
-	inoremap []     []
-
-	inoremap '      ''<Left>
-	inoremap '<CR>  '<CR>'<Esc>O
-	inoremap ''     ''
-
-	inoremap "      ""<Left>
-	inoremap "<CR>  "<CR>"<Esc>O
-	inoremap ""     ""
-
-	inoremap (      ()<Left>
-	inoremap (<CR>  (<CR>)<Esc>O
-	inoremap ((     (
-	inoremap ()     ()
-
 " Shortcutting split navigation, saving a keypress:
 	map <C-h> <C-w>h
 	map <C-j> <C-w>j
@@ -108,7 +85,7 @@ set clipboard+=unnamedplus
 " Replace all is aliased to S.
 	nnoremap S :%s//g<Left><Left>
 
-" Compile and run a C++ file
+" Compile and run a file
 	map <leader>c :w! \| !car <c-r>%<CR>
 
 " Open corresponding .pdf/.html or preview
